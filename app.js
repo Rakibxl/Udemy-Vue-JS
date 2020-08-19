@@ -6,6 +6,8 @@ new Vue({
     
     },
     methods:{
-        
+        logMessage(){
+            console.log('Hello world')
+        }
     }     
 })
