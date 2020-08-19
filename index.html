@@ -11,11 +11,14 @@
     <h1>Vue Basics</h1>
     <div id="app">
         <h2>{{title}}</h2>
-     <p v-if="showName">Mario</p>
-     <p v-if="showAge">50</p>
-
-     <button @click="toggleName">ShowName: {{ showName }}</button>
-     <button @click="toggleAge">ShowAge: {{ showAge }}</button>
+     <ul>
+         <li v-for="item in items">{{item}}</li>
+     </ul>
+     <div v-for="(ninja,index) in ninjas"> 
+         <p>  {{index}} name:{{ninja.name}} </p>
+         <p>Age:{{ninja.age}} </p>
+         <p>Belt color: {{ninja.belt}} </p>
+     </div>
     </div>
 
     <script src="app.js"></script>
